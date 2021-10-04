@@ -152,7 +152,7 @@ static NSError *YouTubeError(NSError *error, NSSet *regionsAllowed, NSString *la
 		NSString *urlString = [NSString stringWithFormat:@"https://youtubei.googleapis.com/youtubei/v1/player?key=%@", XCDYouTubeClient.innertubeApiKey];
 		NSURL *url = [NSURL URLWithString:urlString];
 		
-		NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:10];
+		NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:20];
 		
 		[request setHTTPMethod:@"POST"];
 		
